@@ -72,14 +72,15 @@ El simulador escribe en `landing_simulator/demo`. Si abres la landing en dos nav
 firebase deploy --only hosting
 ```
 
-### GitHub Pages
+### Publicar en Vercel (recomendado)
 
-1. Ve a **Settings → Pages** del repo: https://github.com/raulleonny1/website-es/settings/pages
-2. En **Build and deployment → Source**, elige **Deploy from a branch**
-3. Branch: **gh-pages** · Folder: **/ (root)**
-4. Guarda. El workflow crea la rama `gh-pages` automáticamente en cada push a `main`.
+1. Importa el repo en [vercel.com](https://vercel.com)
+2. Framework: **Other** · Build/Output/Install: **vacíos**
+3. Deploy — no requiere variables de entorno
 
-La URL será: `https://raulleonny1.github.io/website-es/`
+### GitHub Pages (opcional)
+
+Si quieres usar GitHub Pages además de Vercel, actívalo manualmente en Settings → Pages → **Deploy from branch** → `gh-pages`. No hay workflow automático; el sitio se publica principalmente en Vercel.
 
 ## Enlaces de la app
 
