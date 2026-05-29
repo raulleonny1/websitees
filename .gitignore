@@ -1,0 +1,15 @@
+# Entorno local
+node_modules/
+.env
+.env.local
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+*.log
+
+# Firebase cache
+.firebase/
+firebase-debug.log
+firestore-debug.log

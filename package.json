@@ -1,0 +1,10 @@
+{
+  "name": "escuela-sabatica-landing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page oficial de Escuela Sabática PWA",
+  "scripts": {
+    "dev": "npx serve . -p 3000",
+    "start": "npx serve . -p 3000"
+  }
+}
