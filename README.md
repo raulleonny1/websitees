@@ -74,7 +74,12 @@ firebase deploy --only hosting
 
 ### GitHub Pages
 
-Activa Pages en el repo con origen **main** / carpeta raíz (`/`).
+1. Ve a **Settings → Pages** del repo: https://github.com/raulleonny1/website-es/settings/pages
+2. En **Build and deployment → Source**, elige **Deploy from a branch**
+3. Branch: **gh-pages** · Folder: **/ (root)**
+4. Guarda. El workflow crea la rama `gh-pages` automáticamente en cada push a `main`.
+
+La URL será: `https://raulleonny1.github.io/website-es/`
 
 ## Enlaces de la app
 
