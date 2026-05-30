@@ -1,12 +1,6 @@
 {
-  "version": 2,
-  "buildCommand": "",
-  "installCommand": "",
   "framework": null,
-  "cleanUrls": true,
-  "trailingSlash": false,
-  "routes": [
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "/index.html" }
-  ]
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "installCommand": ""
 }
