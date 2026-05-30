@@ -18,6 +18,7 @@ fs.rmSync(dist, { recursive: true, force: true });
 fs.mkdirSync(dist, { recursive: true });
 
 fs.copyFileSync(path.join(root, "index.html"), path.join(dist, "index.html"));
+fs.copyFileSync(path.join(root, "ads.txt"), path.join(dist, "ads.txt"));
 copyDir(path.join(root, "js"), path.join(dist, "js"));
 copyDir(path.join(root, "public"), path.join(dist, "public"));
 
