@@ -111,6 +111,18 @@
             color: #c9a227;
             text-decoration-color: #1e3a5f;
         }
+        .app-screenshot-frame {
+            background: #ffffff;
+            border-radius: 1rem;
+            padding: 0.75rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+        }
+        @media (min-width: 768px) {
+            .app-screenshot-frame {
+                padding: 1rem;
+                border-radius: 1.25rem;
+            }
+        }
     </style>
 </head>
 <body class="min-h-screen flex flex-col antialiased selection:bg-sabado-accent/30">
@@ -238,8 +250,8 @@
 
                     <div class="lg:col-span-5 flex justify-center lg:justify-end">
                         <div class="max-w-[300px] w-full">
-                            <div class="rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/20">
-                                <img src="/public/img/img_home.jpeg" alt="Pantalla de bienvenida de Escuela Sabática" class="w-full h-auto block" loading="eager">
+                            <div class="app-screenshot-frame ring-1 ring-white/30">
+                                <img src="public/img/img_home.jpeg" alt="Pantalla de bienvenida de Escuela Sabática" class="w-full h-auto block rounded-lg" loading="eager">
                             </div>
                             <p class="mt-4 text-sm text-gray-300 text-center lg:text-left leading-relaxed">
                                 <span class="text-sabado-accent font-semibold">Paso 1 — Bienvenida.</span> Al entrar eliges tu rol: maestro de clase, alumno con código, o estudio independiente desde casa.
@@ -537,8 +549,8 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                     <div class="order-2 lg:order-1 flex justify-center">
                         <div class="max-w-[280px] w-full">
-                            <div class="rounded-2xl overflow-hidden shadow-xl border border-gray-200">
-                                <img src="/public/img/img_movil.jpeg" alt="Lección diaria en celular" class="w-full h-auto block" loading="lazy">
+                            <div class="app-screenshot-frame ring-1 ring-gray-200/80">
+                                <img src="public/img/img_movil.jpeg" alt="Lección diaria en celular" class="w-full h-auto block rounded-lg" loading="lazy">
                             </div>
                         </div>
                     </div>
@@ -692,13 +704,15 @@
                         </div>
                     </div>
 
-                    <!-- Captura real: clase en tablet -->
-                    <div class="space-y-4">
-                        <div class="rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
-                            <img src="/public/img/img_ipad.jpeg" alt="Vista de clase en tablet con audio, pizarra y lección" class="w-full h-auto block" loading="lazy">
+                    <!-- Captura real: lección en tablet o PC (pestaña Lección, no pizarra) -->
+                    <div class="space-y-4 lg:max-w-xl lg:ml-auto w-full">
+                        <div class="app-screenshot-frame ring-1 ring-white/40">
+                            <div class="overflow-hidden rounded-lg bg-white aspect-[3/4] sm:aspect-[4/5]">
+                                <img src="public/img/img_ipad.jpeg" alt="Lección del día en tablet o computadora con audio y herramientas de clase" class="w-full h-full object-cover object-top" loading="eager" decoding="async">
+                            </div>
                         </div>
                         <p class="text-sm text-gray-300 text-center leading-relaxed">
-                            <span class="text-sabado-accent font-semibold">Vista de maestro en tablet.</span> Audio en vivo, pizarra digital, lección visual y control de la clase — ideal para proyectar en la iglesia o enseñar desde casa.
+                            <span class="text-sabado-accent font-semibold">Lección en pantalla grande.</span> El maestro proyecta la lectura del día, activa el audio grupal y usa la pizarra solo cuando lo necesita — todo desde el navegador, sin apps extra.
                         </p>
                     </div>
 
