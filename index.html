@@ -111,14 +111,6 @@
             color: #c9a227;
             text-decoration-color: #1e3a5f;
         }
-        .device-phone {
-            border-radius: 2.5rem;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.45);
-        }
-        .device-tablet {
-            border-radius: 1.25rem;
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
-        }
     </style>
 </head>
 <body class="min-h-screen flex flex-col antialiased selection:bg-sabado-accent/30">
@@ -197,28 +189,8 @@
             </div>
 
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <!-- GALERÍA APP — visible nada más entrar -->
-                <div class="mb-10 md:mb-12">
-                    <p class="text-center text-sabado-accent text-sm font-semibold uppercase tracking-widest mb-5">Capturas reales del sistema</p>
-                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 md:gap-6 max-w-5xl mx-auto">
-                        <figure class="bg-white/10 backdrop-blur-sm rounded-2xl p-3 border border-white/20 shadow-xl">
-                            <img src="/public/img/img_home.jpeg" alt="Pantalla de bienvenida: elegir maestro, alumno o independiente" class="w-full h-auto rounded-xl shadow-md" loading="eager">
-                            <figcaption class="text-center text-xs text-gray-200 mt-3 font-medium">Bienvenida · Elige tu rol</figcaption>
-                        </figure>
-                        <figure class="bg-white/10 backdrop-blur-sm rounded-2xl p-3 border border-white/20 shadow-xl">
-                            <img src="/public/img/img_movil.jpeg" alt="Lección diaria en el celular" class="w-full h-auto rounded-xl shadow-md" loading="eager">
-                            <figcaption class="text-center text-xs text-gray-200 mt-3 font-medium">Móvil · Lección diaria</figcaption>
-                        </figure>
-                        <figure class="bg-white/10 backdrop-blur-sm rounded-2xl p-3 border border-white/20 shadow-xl sm:col-span-3 md:col-span-1">
-                            <img src="/public/img/img_ipad.jpeg" alt="Vista en tablet con audio y pizarra" class="w-full h-auto rounded-xl shadow-md" loading="eager">
-                            <figcaption class="text-center text-xs text-gray-200 mt-3 font-medium">Tablet · Clase completa</figcaption>
-                        </figure>
-                    </div>
-                </div>
-
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                    <!-- Textos y acciones -->
-                    <div class="lg:col-span-12 space-y-6 text-center">
+                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
                         <div class="inline-flex items-center space-x-2 bg-sabado-accent/15 border border-sabado-accent/30 px-3.5 py-1.5 rounded-full text-sabado-accent text-sm font-semibold tracking-wide">
                             <span class="flex h-2 w-2 relative">
                                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sabado-accent opacity-75"></span>
@@ -232,12 +204,12 @@
                             <span class="text-sabado-accent">Siempre Contigo, en Comunidad</span>
                         </h1>
                         
-                        <p class="text-lg text-gray-200 font-light max-w-2xl mx-auto leading-relaxed">
+                        <p class="text-lg text-gray-200 font-light max-w-2xl mx-auto lg:mx-0 leading-relaxed">
                             Estudia la Lección del trimestre, accede a la Biblia integrada, comparte comentarios en tiempo real y sintoniza con tu clase de iglesia local mediante salas de audio y pizarra compartida. Todo desde tu navegador, sin necesidad de descargar de tiendas.
                         </p>
 
                         <!-- Highlights list inside hero -->
-                        <div class="flex flex-wrap justify-center gap-y-3 gap-x-6 text-sm text-gray-300">
+                        <div class="flex flex-wrap justify-center lg:justify-start gap-y-3 gap-x-6 text-sm text-gray-300">
                             <div class="flex items-center gap-2">
                                 <svg class="w-5 h-5 text-sabado-accent" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path></svg>
                                 <span>100% Sin Tiendas de Apps (PWA)</span>
@@ -253,7 +225,7 @@
                         </div>
 
                         <!-- CTA buttons -->
-                        <div class="flex flex-col sm:flex-row gap-4 justify-center pt-2">
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
                             <a href="https://escuelasabatica-sable.vercel.app" target="_blank" class="bg-sabado-accent hover:bg-yellow-500 text-sabado-primary px-8 py-4 rounded-xl text-lg font-bold shadow-lg shadow-black/20 transition-all transform hover:-translate-y-1 text-center flex items-center justify-center gap-2">
                                 <span>Abrir Aplicación</span>
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path></svg>
@@ -261,6 +233,17 @@
                             <a href="#instalacion" class="bg-transparent hover:bg-white/10 text-white border border-white/30 px-8 py-4 rounded-xl text-lg font-semibold transition-all text-center">
                                 ¿Cómo instalar la App?
                             </a>
+                        </div>
+                    </div>
+
+                    <div class="lg:col-span-5 flex justify-center lg:justify-end">
+                        <div class="max-w-[300px] w-full">
+                            <div class="rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/20">
+                                <img src="/public/img/img_home.jpeg" alt="Pantalla de bienvenida de Escuela Sabática" class="w-full h-auto block" loading="eager">
+                            </div>
+                            <p class="mt-4 text-sm text-gray-300 text-center lg:text-left leading-relaxed">
+                                <span class="text-sabado-accent font-semibold">Paso 1 — Bienvenida.</span> Al entrar eliges tu rol: maestro de clase, alumno con código, o estudio independiente desde casa.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -548,6 +531,42 @@
             </div>
         </section>
 
+        <!-- APP EN MÓVIL -->
+        <section class="py-16 md:py-24 bg-white border-b border-sabado-primary/5">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                    <div class="order-2 lg:order-1 flex justify-center">
+                        <div class="max-w-[280px] w-full">
+                            <div class="rounded-2xl overflow-hidden shadow-xl border border-gray-200">
+                                <img src="/public/img/img_movil.jpeg" alt="Lección diaria en celular" class="w-full h-auto block" loading="lazy">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="order-1 lg:order-2 space-y-5">
+                        <span class="text-xs font-bold text-sabado-accent uppercase tracking-widest">Estudio diario</span>
+                        <h2 class="text-3xl sm:text-4xl font-bold text-sabado-primary font-serif">La lección del trimestre en tu bolsillo</h2>
+                        <p class="text-gray-600 leading-relaxed">
+                            Navega día a día por el trimestre completo. Cada jornada tiene su lectura interactiva, con acceso rápido al PDF, la Biblia Reina Valera 1960, tus notas personales y el chat de clase.
+                        </p>
+                        <ul class="space-y-3 text-sm text-gray-700">
+                            <li class="flex items-start gap-3">
+                                <span class="w-6 h-6 rounded-full bg-sabado-accent/20 text-sabado-primary flex items-center justify-center flex-shrink-0 text-xs font-bold">1</span>
+                                <span>Calendario semanal con sábado a viernes siempre visible.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="w-6 h-6 rounded-full bg-sabado-accent/20 text-sabado-primary flex items-center justify-center flex-shrink-0 text-xs font-bold">2</span>
+                                <span>Marcadores de colores, subrayado y notas en cada párrafo.</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <span class="w-6 h-6 rounded-full bg-sabado-accent/20 text-sabado-primary flex items-center justify-center flex-shrink-0 text-xs font-bold">3</span>
+                                <span>Funciona sin internet: la lección queda guardada en caché.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- FUNCIONALIDADES PRINCIPALES (GRID CON ICONOS) -->
         <section id="funciones" class="py-16 md:py-24 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -673,53 +692,13 @@
                         </div>
                     </div>
 
-                    <!-- Graphic representation / Illustrative mock -->
-                    <div class="bg-white/5 border border-white/10 p-6 rounded-3xl relative overflow-hidden backdrop-blur-sm shadow-xl flex flex-col justify-center">
-                        <div class="border-b border-white/10 pb-4 mb-4 flex justify-between items-center">
-                            <span class="text-xs font-semibold text-sabado-accent flex items-center gap-1.5">
-                                <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span> Audio de la Clase Conectado
-                            </span>
-                            <span class="text-xs text-gray-400">4 de la clase en llamada</span>
+                    <!-- Captura real: clase en tablet -->
+                    <div class="space-y-4">
+                        <div class="rounded-2xl overflow-hidden shadow-2xl ring-1 ring-white/10">
+                            <img src="/public/img/img_ipad.jpeg" alt="Vista de clase en tablet con audio, pizarra y lección" class="w-full h-auto block" loading="lazy">
                         </div>
-                        
-                        <!-- List of Voice participants visual mockup -->
-                        <div class="space-y-3">
-                            <div class="flex items-center justify-between bg-white/10 p-3 rounded-xl border border-white/5">
-                                <div class="flex items-center gap-3">
-                                    <!-- Talking wave visualizer simulator -->
-                                    <span class="bg-emerald-500/20 text-emerald-400 p-1.5 rounded-full text-xs font-bold w-7 h-7 flex items-center justify-center relative">
-                                        H
-                                        <span class="absolute -top-1 -right-1 w-2.5 h-2.5 bg-emerald-500 rounded-full"></span>
-                                    </span>
-                                    <span class="text-xs font-medium">Pastor Héctor (Maestro)</span>
-                                </div>
-                                <span class="text-[10px] text-emerald-400 font-semibold animate-pulse bg-emerald-500/10 px-2 py-0.5 rounded">Hablando...</span>
-                            </div>
-
-                            <div class="flex items-center justify-between bg-white/5 p-3 rounded-xl border border-white/5">
-                                <div class="flex items-center gap-3">
-                                    <span class="bg-sabado-accent/20 text-sabado-accent p-1.5 rounded-full text-xs font-bold w-7 h-7 flex items-center justify-center">E</span>
-                                    <span class="text-xs font-medium">Elena G.</span>
-                                </div>
-                                <span class="text-[10px] text-gray-400">Escuchando</span>
-                            </div>
-
-                            <div class="flex items-center justify-between bg-white/5 p-3 rounded-xl border border-white/5">
-                                <div class="flex items-center gap-3">
-                                    <span class="bg-gray-400/20 text-gray-300 p-1.5 rounded-full text-xs font-bold w-7 h-7 flex items-center justify-center">M</span>
-                                    <span class="text-xs font-medium">Moisés L. (Tú)</span>
-                                </div>
-                                <div class="flex items-center gap-2">
-                                    <!-- Mic status -->
-                                    <span class="text-[10px] text-gray-400">Silenciado</span>
-                                    <svg class="w-4 h-4 text-red-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18.75a6 6 0 006-6v-1.5m-6 7.5a6 6 0 01-6-6v-1.5m6 7.5v3.75m-3.75 0h7.5M12 15.75a3 3 0 01-3-3V4.5a3 3 0 116 0v8.25a3 3 0 01-3 3z"></path></svg>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Mini disclaimer -->
-                        <p class="text-[11px] text-gray-300/80 mt-6 text-center italic">
-                            * El audio y la pizarra compartida están disponibles únicamente en clases creadas por maestros de Escuela Sabática.
+                        <p class="text-sm text-gray-300 text-center leading-relaxed">
+                            <span class="text-sabado-accent font-semibold">Vista de maestro en tablet.</span> Audio en vivo, pizarra digital, lección visual y control de la clase — ideal para proyectar en la iglesia o enseñar desde casa.
                         </p>
                     </div>
 
