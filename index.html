@@ -138,7 +138,6 @@
 
                 <!-- Desktop Navigation -->
                 <nav class="hidden md:flex space-x-8 items-center text-sm font-medium">
-                    <a href="#app-preview" class="text-gray-200 hover:text-sabado-accent transition-colors">La App</a>
                     <a href="#roles" class="text-gray-200 hover:text-sabado-accent transition-colors">Roles de Estudio</a>
                     <a href="#funciones" class="text-gray-200 hover:text-sabado-accent transition-colors">Funcionalidades</a>
                     <a href="#simulador" class="text-gray-200 hover:text-sabado-accent transition-colors">Sincronización</a>
@@ -168,7 +167,6 @@
         <!-- Mobile Menu list -->
         <div id="mobileMenu" class="hidden md:hidden bg-sabado-secondary border-t border-sabado-primary">
             <div class="px-4 pt-3 pb-6 space-y-3 shadow-lg">
-                <a href="#app-preview" class="block text-white hover:text-sabado-accent py-2 border-b border-sabado-primary/30 font-medium">La App</a>
                 <a href="#roles" class="block text-white hover:text-sabado-accent py-2 border-b border-sabado-primary/30 font-medium">Roles de Estudio</a>
                 <a href="#funciones" class="block text-white hover:text-sabado-accent py-2 border-b border-sabado-primary/30 font-medium">Funcionalidades</a>
                 <a href="#simulador" class="block text-white hover:text-sabado-accent py-2 border-b border-sabado-primary/30 font-medium">Sincronización</a>
@@ -199,9 +197,28 @@
             </div>
 
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <!-- GALERÍA APP — visible nada más entrar -->
+                <div class="mb-10 md:mb-12">
+                    <p class="text-center text-sabado-accent text-sm font-semibold uppercase tracking-widest mb-5">Capturas reales del sistema</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 md:gap-6 max-w-5xl mx-auto">
+                        <figure class="bg-white/10 backdrop-blur-sm rounded-2xl p-3 border border-white/20 shadow-xl">
+                            <img src="/public/img/img_home.jpeg" alt="Pantalla de bienvenida: elegir maestro, alumno o independiente" class="w-full h-auto rounded-xl shadow-md" loading="eager">
+                            <figcaption class="text-center text-xs text-gray-200 mt-3 font-medium">Bienvenida · Elige tu rol</figcaption>
+                        </figure>
+                        <figure class="bg-white/10 backdrop-blur-sm rounded-2xl p-3 border border-white/20 shadow-xl">
+                            <img src="/public/img/img_movil.jpeg" alt="Lección diaria en el celular" class="w-full h-auto rounded-xl shadow-md" loading="eager">
+                            <figcaption class="text-center text-xs text-gray-200 mt-3 font-medium">Móvil · Lección diaria</figcaption>
+                        </figure>
+                        <figure class="bg-white/10 backdrop-blur-sm rounded-2xl p-3 border border-white/20 shadow-xl sm:col-span-3 md:col-span-1">
+                            <img src="/public/img/img_ipad.jpeg" alt="Vista en tablet con audio y pizarra" class="w-full h-auto rounded-xl shadow-md" loading="eager">
+                            <figcaption class="text-center text-xs text-gray-200 mt-3 font-medium">Tablet · Clase completa</figcaption>
+                        </figure>
+                    </div>
+                </div>
+
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                    <!-- Left Hero: Texts & Actions -->
-                    <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <!-- Textos y acciones -->
+                    <div class="lg:col-span-12 space-y-6 text-center">
                         <div class="inline-flex items-center space-x-2 bg-sabado-accent/15 border border-sabado-accent/30 px-3.5 py-1.5 rounded-full text-sabado-accent text-sm font-semibold tracking-wide">
                             <span class="flex h-2 w-2 relative">
                                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sabado-accent opacity-75"></span>
@@ -215,12 +232,12 @@
                             <span class="text-sabado-accent">Siempre Contigo, en Comunidad</span>
                         </h1>
                         
-                        <p class="text-lg text-gray-200 font-light max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        <p class="text-lg text-gray-200 font-light max-w-2xl mx-auto leading-relaxed">
                             Estudia la Lección del trimestre, accede a la Biblia integrada, comparte comentarios en tiempo real y sintoniza con tu clase de iglesia local mediante salas de audio y pizarra compartida. Todo desde tu navegador, sin necesidad de descargar de tiendas.
                         </p>
 
                         <!-- Highlights list inside hero -->
-                        <div class="flex flex-wrap justify-center lg:justify-start gap-y-3 gap-x-6 text-sm text-gray-300">
+                        <div class="flex flex-wrap justify-center gap-y-3 gap-x-6 text-sm text-gray-300">
                             <div class="flex items-center gap-2">
                                 <svg class="w-5 h-5 text-sabado-accent" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path></svg>
                                 <span>100% Sin Tiendas de Apps (PWA)</span>
@@ -236,7 +253,7 @@
                         </div>
 
                         <!-- CTA buttons -->
-                        <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center pt-2">
                             <a href="https://escuelasabatica-sable.vercel.app" target="_blank" class="bg-sabado-accent hover:bg-yellow-500 text-sabado-primary px-8 py-4 rounded-xl text-lg font-bold shadow-lg shadow-black/20 transition-all transform hover:-translate-y-1 text-center flex items-center justify-center gap-2">
                                 <span>Abrir Aplicación</span>
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path></svg>
@@ -246,89 +263,6 @@
                             </a>
                         </div>
                     </div>
-
-                    <!-- Right Hero: captura real de la app -->
-                    <div class="lg:col-span-5 flex justify-center">
-                        <div class="relative w-full max-w-[280px] sm:max-w-xs">
-                            <div class="absolute -inset-1.5 bg-gradient-to-r from-sabado-accent to-yellow-500 rounded-[2.5rem] blur opacity-30 animate-pulse"></div>
-                            <div class="relative bg-[#112237] border-4 border-sabado-secondary device-phone overflow-hidden shadow-2xl">
-                                <div class="absolute top-0 inset-x-0 h-5 bg-black rounded-b-xl flex justify-center z-30">
-                                    <div class="w-20 h-3.5 bg-black/40 rounded-full mt-1"></div>
-                                </div>
-                                <img
-                                    src="public/img/img_home.jpeg"
-                                    alt="Pantalla de bienvenida de Escuela Sabática: elegir rol maestro, alumno o independiente"
-                                    class="w-full h-auto pt-5 object-cover object-top"
-                                    loading="eager"
-                                >
-                            </div>
-                            <p class="text-center text-xs text-gray-300 mt-4 font-medium">Pantalla de bienvenida · Elige tu rol</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CAPTURAS REALES DE LA APP -->
-        <section id="app-preview" class="py-16 md:py-24 bg-sabado-crema border-y border-sabado-primary/5">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center max-w-3xl mx-auto mb-12 md:mb-16">
-                    <span class="text-xs font-bold text-sabado-accent uppercase tracking-widest bg-sabado-primary/10 px-3.5 py-1.5 rounded-full">Vista previa real</span>
-                    <h2 class="text-3xl sm:text-4xl font-bold text-sabado-primary font-serif mt-4">Así se ve la aplicación por dentro</h2>
-                    <p class="text-gray-600 mt-4 text-base sm:text-lg leading-relaxed">
-                        Capturas reales del sistema: estudio diario, lección interactiva, Biblia, notas y herramientas de clase en móvil y tablet.
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
-                    <!-- Móvil: lección diaria -->
-                    <div class="lg:col-span-4 flex flex-col items-center">
-                        <div class="relative w-full max-w-[260px]">
-                            <div class="absolute -inset-1 bg-sabado-primary/10 rounded-[2.5rem] blur-sm"></div>
-                            <div class="relative bg-[#112237] border-4 border-sabado-secondary device-phone overflow-hidden">
-                                <div class="absolute top-0 inset-x-0 h-4 bg-black rounded-b-lg flex justify-center z-10">
-                                    <div class="w-16 h-2.5 bg-black/50 rounded-full mt-0.5"></div>
-                                </div>
-                                <img
-                                    src="public/img/img_movil.jpeg"
-                                    alt="Escuela Sabática en móvil: lección diaria con días de la semana y marcadores"
-                                    class="w-full h-auto pt-4 object-cover"
-                                    loading="lazy"
-                                >
-                            </div>
-                        </div>
-                        <div class="mt-5 text-center max-w-xs">
-                            <h3 class="font-serif font-bold text-sabado-primary text-lg">En tu celular</h3>
-                            <p class="text-sm text-gray-600 mt-1 leading-relaxed">Navega por cada día de la semana, marca la lección, accede a PDF, Biblia y chat.</p>
-                        </div>
-                    </div>
-
-                    <!-- Tablet: vista completa de clase -->
-                    <div class="lg:col-span-8 flex flex-col items-center">
-                        <div class="relative w-full">
-                            <div class="absolute -inset-2 bg-gradient-to-br from-sabado-accent/20 to-sabado-primary/10 rounded-2xl blur-md"></div>
-                            <div class="relative bg-[#112237] border-4 border-sabado-secondary device-tablet overflow-hidden p-2 sm:p-3">
-                                <div class="absolute top-2 left-1/2 -translate-x-1/2 w-2 h-2 rounded-full bg-gray-600 z-10 hidden sm:block"></div>
-                                <img
-                                    src="public/img/img_ipad.jpeg"
-                                    alt="Escuela Sabática en tablet: lección completa con audio, pizarra y panel del maestro"
-                                    class="w-full h-auto rounded-lg object-cover"
-                                    loading="lazy"
-                                >
-                            </div>
-                        </div>
-                        <div class="mt-5 text-center max-w-2xl">
-                            <h3 class="font-serif font-bold text-sabado-primary text-lg sm:text-xl">En tablet o computadora</h3>
-                            <p class="text-sm text-gray-600 mt-1 leading-relaxed">Ideal para proyectar en la iglesia: audio de clase, pizarra digital, lección visual y control del maestro en pantalla amplia.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-12 flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="https://escuelasabatica-sable.vercel.app" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 bg-sabado-primary hover:bg-sabado-secondary text-white px-8 py-3.5 rounded-xl font-bold shadow-md transition-all">
-                        Probar la aplicación ahora
-                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"></path></svg>
-                    </a>
                 </div>
             </div>
         </section>
