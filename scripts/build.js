@@ -19,6 +19,8 @@ fs.mkdirSync(dist, { recursive: true });
 
 fs.copyFileSync(path.join(root, "index.html"), path.join(dist, "index.html"));
 fs.copyFileSync(path.join(root, "ads.txt"), path.join(dist, "ads.txt"));
+fs.copyFileSync(path.join(root, "robots.txt"), path.join(dist, "robots.txt"));
+fs.copyFileSync(path.join(root, "sitemap.xml"), path.join(dist, "sitemap.xml"));
 copyDir(path.join(root, "js"), path.join(dist, "js"));
 copyDir(path.join(root, "public"), path.join(dist, "public"));
 
