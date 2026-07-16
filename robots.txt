@@ -1,4 +1,10 @@
+# Permite rastreo de AdSense / Google (ads.txt y sitio)
 User-agent: *
+Allow: /ads.txt
+Allow: /
+
+User-agent: Googlebot
+Allow: /ads.txt
 Allow: /
 
 User-agent: Mediapartners-Google
